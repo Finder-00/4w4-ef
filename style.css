@@ -1569,4 +1569,59 @@ La barre du millieu
 #secondary {
   padding-left: 8%;
 }
+
+/* local cours
+--------------------------------------------- */
+.cours {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cours .session1, .cours .session2, .cours .session3, .cours .session4, .cours .session5, .cours .session6 {
+  display: flex;
+  margin: 2vh 0;
+}
+
+.cours .session1 article, .cours .session2 article, .cours .session3 article, .cours .session4 article, .cours .session5 article, .cours .session6 article {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.cours .session1 article p, .cours .session2 article p, .cours .session3 article p, .cours .session4 article p, .cours .session5 article p, .cours .session6 article p {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.cours .session1 article a, .cours .session2 article a, .cours .session3 article a, .cours .session4 article a, .cours .session5 article a, .cours .session6 article a {
+  text-decoration: none;
+}
+
+.cours .session1 {
+  background-color: #90dfe8;
+}
+
+.cours .session2 {
+  background-color: gray;
+}
+
+.cours .session3 {
+  background-color: red;
+}
+
+.cours .session4 {
+  background-color: aquamarine;
+}
+
+.cours .session5 {
+  background-color: violet;
+}
+
+.cours .session6 {
+  background-color: black;
+}
 /*# sourceMappingURL=style.css.map */

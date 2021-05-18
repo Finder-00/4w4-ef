@@ -1,0 +1,44 @@
+.cours{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .session1,.session2,.session3,.session4,.session5,.session6{
+    display: flex;
+    margin: 2vh 0;
+    article{
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 100%;
+      margin: 0 20px;
+      p{
+        font-weight: bold;
+        margin-bottom: 1em;
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+
+  .session1{
+    background-color: rgb(144, 223, 232);
+  }
+  .session2{
+    background-color: gray;
+  }
+  .session3{
+    background-color: red;
+  }
+  .session4{
+    background-color: aquamarine;
+  }
+  .session5{
+    background-color:violet;
+  }
+  .session6{
+    background-color: black;
+  }
+}
