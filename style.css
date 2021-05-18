@@ -1588,6 +1588,18 @@ La barre du millieu
 
 /* local cours
 --------------------------------------------- */
+.page-title {
+  font-size: clamp(1rem, 10vw, 3rem) !important;
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+  .page-title {
+    font-size: clamp(1rem, 7vw, 4rem) !important;
+    margin-top: 4vh;
+  }
+}
+
 .cours {
   display: flex;
   width: 100%;
@@ -1598,52 +1610,121 @@ La barre du millieu
 .cours .session1, .cours .session2, .cours .session3, .cours .session4, .cours .session5, .cours .session6 {
   display: flex;
   margin: 2vh 0;
+  width: 100%;
+}
+
+.cours .session1 .sigle, .cours .session2 .sigle, .cours .session3 .sigle, .cours .session4 .sigle, .cours .session5 .sigle, .cours .session6 .sigle {
+  font-size: clamp(0.6rem, 3vw, 1rem);
+  margin: 0;
 }
 
 .cours .session1 h1, .cours .session2 h1, .cours .session3 h1, .cours .session4 h1, .cours .session5 h1, .cours .session6 h1 {
-  color: #143d6f;
-  padding-left: 10px;
-  align-self: center;
+  font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
 .cours .session1 article, .cours .session2 article, .cours .session3 article, .cours .session4 article, .cours .session5 article, .cours .session6 article {
+  transition: all .3s ease-in;
   text-align: center;
-  border: 1px solid black;
+  transform: rotate(-90deg);
+  border: 1px solid #0e5d88;
   border-radius: 10px;
-  width: 100%;
-  margin: 0 20px;
+  height: 40px;
+  padding: 5px;
 }
 
 .cours .session1 article p, .cours .session2 article p, .cours .session3 article p, .cours .session4 article p, .cours .session5 article p, .cours .session6 article p {
-  font-weight: bold;
-  margin-bottom: 1em;
+  display: none;
 }
 
-.cours .session1 article a, .cours .session2 article a, .cours .session3 article a, .cours .session4 article a, .cours .session5 article a, .cours .session6 article a {
-  text-decoration: none;
+.cours .session1 article a:not(.sigle), .cours .session2 article a:not(.sigle), .cours .session3 article a:not(.sigle), .cours .session4 article a:not(.sigle), .cours .session5 article a:not(.sigle), .cours .session6 article a:not(.sigle) {
+  display: none;
 }
 
-.cours .session1 {
-  background-color: #90dfe8;
+@media (min-width: 800px) {
+  .cours .session1 .sigle, .cours .session2 .sigle, .cours .session3 .sigle, .cours .session4 .sigle, .cours .session5 .sigle, .cours .session6 .sigle {
+    display: none;
+  }
+  .cours .session1 h1, .cours .session2 h1, .cours .session3 h1, .cours .session4 h1, .cours .session5 h1, .cours .session6 h1 {
+    display: block;
+    color: #143d6f;
+    padding-left: 10px;
+    align-self: center;
+  }
+  .cours .session1 article, .cours .session2 article, .cours .session3 article, .cours .session4 article, .cours .session5 article, .cours .session6 article {
+    transform: inherit;
+    border: 2.5px solid #0e5d88;
+    margin: 0 1%;
+    width: 100%;
+    height: inherit;
+    padding: inherit;
+  }
+  .cours .session1 article p, .cours .session2 article p, .cours .session3 article p, .cours .session4 article p, .cours .session5 article p, .cours .session6 article p {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .cours .session1 article a:not(.sigle), .cours .session2 article a:not(.sigle), .cours .session3 article a:not(.sigle), .cours .session4 article a:not(.sigle), .cours .session5 article a:not(.sigle), .cours .session6 article a:not(.sigle) {
+    display: block !important;
+    text-decoration: none;
+    font-size: clamp(0.8rem, 1.3vw, 1.2rem);
+    font-weight: bold;
+  }
 }
 
-.cours .session2 {
-  background-color: gray;
+.cours .bleu {
+  background-color: lightcoral;
 }
 
-.cours .session3 {
-  background-color: red;
+.cours .session1 a {
+  color: #742abf;
 }
 
-.cours .session4 {
-  background-color: aquamarine;
+.cours .session1 article:hover {
+  transform: scale(101%);
+  box-shadow: 0px 5px 13px rgba(100, 57, 143, 0.604);
 }
 
-.cours .session5 {
-  background-color: violet;
+.cours .session2 a {
+  color: #86befa;
 }
 
-.cours .session6 {
-  background-color: black;
+.cours .session2 article:hover {
+  transform: scale(101%);
+  box-shadow: 0px 5px 13px rgba(134, 190, 250, 0.556);
+}
+
+.cours .session3 a {
+  color: #5bd8cc;
+}
+
+.cours .session3 article:hover {
+  transform: scale(101%);
+  box-shadow: 0px 5px 13px rgba(91, 216, 203, 0.548);
+}
+
+.cours .session4 a {
+  color: #e86143;
+}
+
+.cours .session4 article:hover {
+  transform: scale(101%);
+  box-shadow: 0px 5px 13px rgba(232, 97, 67, 0.522);
+}
+
+.cours .session5 a {
+  color: #ed5ee1;
+}
+
+.cours .session5 article:hover {
+  transform: scale(101%);
+  box-shadow: 0px 5px 13px rgba(237, 94, 225, 0.521);
+}
+
+.cours .session6 a {
+  color: #26ba75;
+}
+
+.cours .session6 article:hover {
+  transform: scale(101%);
+  box-shadow: 0px 5px 13px rgba(38, 186, 117, 0.548);
 }
 /*# sourceMappingURL=style.css.map */

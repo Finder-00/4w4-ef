@@ -1,3 +1,12 @@
+.page-title{
+  font-size:clamp(1rem, 10vw , 3rem) !important;
+  margin-top: 0;
+  @include tablet{
+    font-size:clamp(1rem, 7vw , 4rem) !important;
+    margin-top:4vh;
+  }
+}
+
 .cours{
   display: flex;
   width: 100%;
@@ -7,43 +16,118 @@
   .session1,.session2,.session3,.session4,.session5,.session6{
     display: flex;
     margin: 2vh 0;
-    h1{
-      color: rgb(20, 61, 111);
-      padding-left: 10px;
-      align-self: center;
-    }
-    article{
-      text-align: center;
-      border: 1px solid black;
-      border-radius: 10px;
-      width: 100%;
-      margin: 0 20px;
-      p{
-        font-weight: bold;
-        margin-bottom: 1em;
+    width: 100%;
+      .sigle{
+        font-size: clamp(.6rem, 3vw , 1rem);
+        margin: 0;
       }
-      a{
-        text-decoration: none;
+      h1{
+        font-size: clamp(1rem, 5vw , 1.2rem);
       }
+      article{
+        transition: all .3s ease-in;
+        text-align: center;
+        transform: rotate(-90deg);
+        border: 1px solid rgb(14, 93, 136);
+        border-radius: 10px;
+        height: 40px;
+        padding: 5px;
+        p{
+          display: none;
+        }
+        a:not(.sigle){
+          display: none;
+        }
+      }
+
+      // affichage tablette et +
+      @include tablet{
+        .sigle{
+          display: none;
+        }
+        h1{
+          display: block;
+          color: rgb(20, 61, 111);
+          padding-left: 10px;
+          align-self: center;
+        }
+        article{
+          transform: inherit;
+          border: 2.5px solid  rgb(14, 93, 136);
+          margin: 0 1%;
+          width: 100%;
+          height: inherit;
+          padding: inherit;
+          p{
+            display: block;
+            margin-bottom: 1em;
+          }
+          a:not(.sigle){
+            display: block !important;
+            text-decoration: none;
+            font-size: clamp(.8rem, 1.3vw , 1.2rem);
+            font-weight: bold;
+          }
+        }
     }
   }
 
+  .bleu{
+    background-color: lightcoral;
+  }
+
   .session1{
-    background-color: rgb(144, 223, 232);
+    a{
+      color: rgb(116, 42, 191);
+    }
+    article:hover{
+      transform: scale(101%);
+      box-shadow: 0px 5px 13px rgba(100, 57, 143, 0.604);
+    }
   }
   .session2{
-    background-color: gray;
+    a{
+      color: rgb(134, 190, 250);
+    }
+    article:hover{
+      transform: scale(101%);
+      box-shadow: 0px 5px 13px rgba(134, 190, 250, 0.556);
+    }
   }
   .session3{
-    background-color: red;
+    a{
+      color: rgb(91, 216, 204);
+    }
+    article:hover{
+      transform: scale(101%);
+      box-shadow: 0px 5px 13px rgba(91, 216, 203, 0.548);
+    }
   }
   .session4{
-    background-color: aquamarine;
+    a{
+      color: rgb(232, 97, 67);
+    }
+    article:hover{
+      transform: scale(101%);
+      box-shadow: 0px 5px 13px rgba(232, 97, 67, 0.522);
+    }
   }
   .session5{
-    background-color:violet;
+    a{
+      color: rgb(237, 94, 225);
+    }
+    article:hover{
+      transform: scale(101%);
+      box-shadow: 0px 5px 13px rgba(237, 94, 225, 0.521);
+    }
   }
   .session6{
-    background-color: black;
+    a{
+      color: rgb(38, 186, 117);
+    }
+    article:hover{
+      transform: scale(101%);
+      box-shadow: 0px 5px 13px rgba(38, 186, 117, 0.548);
+    }
   }
 }
