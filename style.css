@@ -1671,7 +1671,11 @@ La barre du millieu
 }
 
 .cours .bleu {
-  background-color: lightcoral;
+  background-color: lightcoral !important;
+}
+
+.cours .rien {
+  background-color: none;
 }
 
 .cours .session1 a {
