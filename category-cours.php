@@ -25,18 +25,14 @@ get_header();
 
 			<!-- Session1 -->
 			<section class="session1">
+				<h1>1</h1> <!-- no session -->
 				<?php $precedent = "XXXXXX";
 
 				while ( have_posts() ) :
 					the_post();
 					convertirTableau($tPropriété);
 					if (in_array($tPropriété['session'], ['1'])):?>
-					
-						<?php if ($tPropriété['typeCours'] != $precedent): 
-								if ("XXXXXX" != $precedent)	: ?>
-									<?php get_template_part( 'template-parts/content', 'cours');?>
-								<?php endif; ?>	
-						<?php endif ?>	
+							<?php get_template_part( 'template-parts/content', 'cours');?>
 					<?php endif ?>
 					<?php	
 					$precedent = $tPropriété['typeCours'];
@@ -44,17 +40,13 @@ get_header();
 			</section>
 
 			<section class="session2">
+				<h1>2</h1> <!-- no session -->
 				<?php $precedent = "XXXXXX";
 				while ( have_posts() ) :
 					the_post();
 					convertirTableau($tPropriété);
 					if (in_array($tPropriété['session'], ['2'])):?>
-					
-						<?php if ($tPropriété['typeCours'] != $precedent): 
-								if ("XXXXXX" != $precedent)	: ?>
 									<?php get_template_part( 'template-parts/content', 'cours');?>
-								<?php endif; ?>	
-						<?php endif ?>	
 					<?php endif ?>
 					<?php	
 					$precedent = $tPropriété['typeCours'];
@@ -62,72 +54,56 @@ get_header();
 			</section>
 
 			<section class="session3">
+				<h1>3</h1> <!-- no session -->
 				<?php $precedent = "XXXXXX";
 				while ( have_posts() ) :
 					the_post();
 					convertirTableau($tPropriété);
 					if (in_array($tPropriété['session'], ['3'])):?>
-					
-						<?php if ($tPropriété['typeCours'] != $precedent): 
-								if ("XXXXXX" != $precedent)	: ?>
-									<?php get_template_part( 'template-parts/content', 'cours');?>
-								<?php endif; ?>	
-						<?php endif ?>	
-					<?php endif ?>
+							<?php get_template_part( 'template-parts/content', 'cours');?>
+						<?php endif ?>
 					<?php	
 					$precedent = $tPropriété['typeCours'];
 				endwhile;?>
 			</section>
 
 			<section class="session4">
+				<h1>4</h1> <!-- no session -->
 				<?php $precedent = "XXXXXX";
 				while ( have_posts() ) :
 					the_post();
 					convertirTableau($tPropriété);
 					if (in_array($tPropriété['session'], ['4'])):?>
-					
-						<?php if ($tPropriété['typeCours'] != $precedent): 
-								if ("XXXXXX" != $precedent)	: ?>
-									<?php get_template_part( 'template-parts/content', 'cours');?>
-								<?php endif; ?>	
+							<?php get_template_part( 'template-parts/content', 'cours');?>
 						<?php endif ?>	
-					<?php endif ?>
 					<?php	
 					$precedent = $tPropriété['typeCours'];
 				endwhile;?>
 			</section>
 
 			<section class="session5">
+				<h1>5</h1> <!-- no session -->
 				<?php $precedent = "XXXXXX";
 				while ( have_posts() ) :
 					the_post();
 					convertirTableau($tPropriété);
 					if (in_array($tPropriété['session'], ['5'])):?>
-					
-						<?php if ($tPropriété['typeCours'] != $precedent): 
-								if ("XXXXXX" != $precedent)	: ?>
-									<?php get_template_part( 'template-parts/content', 'cours');?>
-								<?php endif; ?>	
-						<?php endif ?>	
-					<?php endif ?>
+							<?php get_template_part( 'template-parts/content', 'cours');?>
+						<?php endif ?>
 					<?php	
 					$precedent = $tPropriété['typeCours'];
 				endwhile;?>
 			</section>
 
 			<section class="session6">
+				<h1>6</h1> <!-- no session -->
 				<?php $precedent = "XXXXXX";
 				while ( have_posts() ) :
 					the_post();
 					convertirTableau($tPropriété);
 					if (in_array($tPropriété['session'], ['6'])):?>
-					
-						<?php if ($tPropriété['typeCours'] != $precedent): 
-								if ("XXXXXX" != $precedent)	: ?>
-									<?php get_template_part( 'template-parts/content', 'cours');?>
-								<?php endif; ?>	
+							<?php get_template_part( 'template-parts/content', 'cours');?>
 						<?php endif ?>	
-					<?php endif ?>
 					<?php	
 					$precedent = $tPropriété['typeCours'];
 				endwhile;?>

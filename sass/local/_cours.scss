@@ -7,6 +7,11 @@
   .session1,.session2,.session3,.session4,.session5,.session6{
     display: flex;
     margin: 2vh 0;
+    h1{
+      color: rgb(20, 61, 111);
+      padding-left: 10px;
+      align-self: center;
+    }
     article{
       text-align: center;
       border: 1px solid black;

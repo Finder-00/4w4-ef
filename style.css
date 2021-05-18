@@ -714,6 +714,22 @@ textarea {
 	#primary .site-main (section principale de la page)
 	#colophon .site-footer	
 */
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "main" "footer";
+}
+
+/*
+#page .site (conteneur de la page)
+	#masthead  .site-header (entete de la page)
+		.site-branding
+			.site-title
+			.site-description
+		#site-nagigation .main-navigation	
+	#primary .site-main (section principale de la page)
+	#colophon .site-footer	
+*/
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1582,6 +1598,12 @@ La barre du millieu
 .cours .session1, .cours .session2, .cours .session3, .cours .session4, .cours .session5, .cours .session6 {
   display: flex;
   margin: 2vh 0;
+}
+
+.cours .session1 h1, .cours .session2 h1, .cours .session3 h1, .cours .session4 h1, .cours .session5 h1, .cours .session6 h1 {
+  color: #143d6f;
+  padding-left: 10px;
+  align-self: center;
 }
 
 .cours .session1 article, .cours .session2 article, .cours .session3 article, .cours .session4 article, .cours .session5 article, .cours .session6 article {
